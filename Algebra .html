@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Algebra </title>
+</head>
+<marquee style="font-size: xxx-large; color: rgb(255, 187, 0); font-style: italic;"> Algebra </marquee>
+<body bgcolor="black" style="color:white;">
+<img src="math logo.jpg" height="200" width="200" align="right">
+    <h5 style="color: darkorange; font-size:x-large; font-style: italic;" align="center"> BODMAS Formula </h5>
+
+    <a style="font-style: oblique; color: cadetblue">- How To Solve Algebraic Expressions?<br></a>
+
+    Like Terms <br>
+    Ex - You are given the following <br>
+    2xy, 2z, 3y, 7z, -3xy, 9y <br>
+  The like terms in this case are - <br>
+  2xy and -3xy <br>
+  2z and 7z <br>
+  3y and 9y <br> 
+
+  <a style="font-style: oblique; color: cadetblue">- In which order to solve </a> <br>
+  the equation may consist of the following brakets - <br>
+  [ { () } ] <br>
+  First solve the equation in [] <br>
+  Then solve the equation in {} <br>
+  Lasty solve the equation in ()
+<br>
+
+    <h5 style="color: darkorange; font-size:x-large; font-style: italic;" align="center"> Examples-> </h5>
+    <p style="font-size:medium; ;color: cadetblue ; font-style: italic;"> ALGEBRA </p>
+    <p style="font-style: oblique;"> 1 + x + x <sup>2</sup> <br>
+    ans- since there are no like terms the answer will stay as 1 + x + x <sup>2</sup>
+    <br>
+    <p align="right">Current Points: <span id="points">0</span></p> <img src="point.png" width="50" height="50" align="right">
+<h5 style="color: darkorange; font-size:x-large; font-style: italic;" align="center"> Some Algebraic Questions</h5>
+    <div id="question1">
+        <p style="color:rgb(0, 255, 208); font-style: italic;">(3x + x) + (5y – 4y) + (-6z + 2z) </p>
+        <input type="radio" id="a" name="q1" value="A">
+        <label for="a"> A. 4x + y – 4z </label><br>
+        <input type="radio" id="b" name="q1" value="B">
+        <label for="b"> B. 2x + 3y + 4z </label><br>
+        <input type="radio" id="c" name="q1" value="C">
+        <label for="c"> C. -3x - y + 4z </label><br>
+        <input type="radio" id="b" name="q1" value="D">
+        <label for="b"> D. 3x - 1y + 9z </label><br>
+      </div>
+      <div id="result1"></div>
+      
+      <div id="question2">
+        <p style="color:rgb(0, 255, 208);font-style: italic"> x<sup>3</sup> + 3x<sup>2</sup> − 2x3 + 2x − x<sup>2</sup> + 3 − x
+
+        </p>
+        <input type="radio" id="a" name="q2" value="A">
+        <label for="a"> A. x + 5x - x + 3 - 7 </label><br>
+        <input type="radio" id="b" name="q2" value="B">
+        <label for="b"> B. -3x +4x -x +3 </label><br>
+        <input type="radio" id="c" name="q2" value="C">
+        <label for="c"> C. −x<sup>3</sup> + 2x<sup>2</sup> + x + 3</label><br>
+        <input type="radio" id="b" name="q2" value="D">
+        <label for="b"> D. +x<sup>3</sup> - 2x<sup>2</sup> - x - 3 </label><br>
+      </div>
+      <div id="result2"></div>
+
+      <div id="question3">
+        <p style="color:rgb(0, 255, 208);font-style: italic">3x + 2y - x - 4y</p>
+        <input type="radio" id="a" name="q3" value="A">
+        <label for="a"> A. 2x - 2y </label><br>
+        <input type="radio" id="b" name="q3" value="B">
+        <label for="b"> B. -2x + 2y </label><br>
+        <input type="radio" id="c" name="q3" value="C">
+        <label for="c"> C. 7x + 5y </label><br>
+        <input type="radio" id="b" name="q3" value="D">
+        <label for="b"> D. 3x - 2y </label><br>
+      </div>
+      <div id="result3"></div>
+
+      <div id="question4">
+        <p style="color:rgb(0, 255, 208);font-style: italic">3(x + y) - 2x</p>
+        <input type="radio" id="a" name="q4" value="A">
+        <label for="a"> A. -x - 2y </label><br>
+        <input type="radio" id="b" name="q4" value="B">
+        <label for="b"> B. x + 2y </label><br>
+        <input type="radio" id="c" name="q4" value="C">
+        <label for="c"> C. 3x - 2y </label><br>
+        <input type="radio" id="b" name="q4" value="D">
+        <label for="b"> D. -1x + 1y </label><br>
+      </div>
+      <div id="result4"></div>
+
+      <div id="question5">
+        <p style="color:rgb(0, 255, 208);font-style: italic">when x = 3 and y = 5: 2x + 3y</p>
+        <input type="radio" id="a" name="q5" value="A">
+        <label for="a"> A. 31 </label><br>
+        <input type="radio" id="b" name="q5" value="B">
+        <label for="b"> B. -21 </label><br>
+        <input type="radio" id="c" name="q5" value="C">
+        <label for="c"> C. 21 </label><br>
+        <input type="radio" id="b" name="q5" value="D">
+        <label for="b"> D. 41 </label><br>
+      </div>
+      <div id="result5"></div>
+<input type="button" name="submit" onclick="check()">
+<button onclick="checkAnswer()" id="add-point-btn">Submit</button>
+<script>
+function checkAnswer() {
+    var radios = document.getElementsByName("q1");
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        var answer = radios[i].value;
+        break;
+      }
+    }
+    var resultDiv = document.getElementById("result1");
+    if (answer === "A") {
+      resultDiv.innerHTML = "Correct!";
+      let currentPoints = 5;
+    } else {
+      resultDiv.innerHTML = "Incorrect. The answer is A.";
+    }
+
+    var radios = document.getElementsByName("q2");
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        var answer = radios[i].value;
+        break;
+      }
+    }
+    var resultDiv = document.getElementById("result2");
+    if (answer === "C") {
+      resultDiv.innerHTML = "Correct!";
+    } else {
+      resultDiv.innerHTML = "Incorrect. The answer is C.";
+    }
+
+    var radios = document.getElementsByName("q3");
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        var answer = radios[i].value;
+        break;
+      }
+    }
+    var resultDiv = document.getElementById("result3");
+    if (answer === "A") {
+      resultDiv.innerHTML = "Correct!";
+    } else {
+      resultDiv.innerHTML = "Incorrect. The answer is A.";
+    }
+
+    var radios = document.getElementsByName("q4");
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        var answer = radios[i].value;
+        break;
+      }
+    }
+    var resultDiv = document.getElementById("result4");
+    if (answer === "B") {
+      resultDiv.innerHTML = "Correct!";
+    } else {
+      resultDiv.innerHTML = "Incorrect. The answer is B.";
+    }
+
+    var radios = document.getElementsByName("q5");
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        var answer = radios[i].value;
+        break;
+      }
+    }
+    var resultDiv = document.getElementById("result5");
+    if (answer === "C") {
+      resultDiv.innerHTML = "Correct!";
+    } else {
+      resultDiv.innerHTML = "Incorrect. The answer is C.";
+    }
+  }
+  const points = document.getElementById("points");
+    const addPointBtn = document.getElementById("add-point-btn");
+
+    let currentPoints = 0;
+
+    addPointBtn.addEventListener("click", function() {
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++;
+      points.innerHTML = currentPoints;
+    });
+
+</script>
+
+<h5 style="color: darkorange; font-size:x-large; font-style: italic;" align="center"> Some questions to do in your notebook </h5>
+<p style="color: rgb(12, 183, 183); font-style: italic;">- Question 1: 2x + 3y - 4x + 5y - x<br>
+  <br>
+- Question 2:  when x = -2 and y = 4: 3x<sup>2</sup> - 2y<br>
+<br>
+- Question 3: (3x - 2y)<sup>2</sup> - (2x + y)<sup>2</sup><br>
+<br>
+
+<style>
+  input[type="Main Page"], input[type="Rewards"] {
+    background-color: #333;
+    color: aquamarine;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+    font-size: 15px;
+    font-style: oblique;
+    cursor: pointer;
+  }
+</style>
+<input type="Main Page" value="Return To Main Page" onclick="window.open('Main Page 1 .html')">
+<p style="color:black;"> hello</p>
+<input type="Rewards" value="Rewards Page" onclick="window.open('Reward Page 2 .html')">
+<h3 style="color:darkorange; font-style: italic;"> CONTACT INFORMATION </h3>
+<br>
+<br>
+<a style="font-style: oblique;">+91 6239921775</a>
+<br>
+<a style="font-style: oblique;">tannish.dhingra@pathways.in</a>
+<br>
+<br>
+</body>
+</html>

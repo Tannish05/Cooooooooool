@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> BODMAS </title>
+</head>
+<marquee style="font-size: xxx-large; color: rgb(255, 187, 0); font-style: italic;"> BODMAS </marquee>
+<body bgcolor="black" style="color:white;">
+<img src="math logo.jpg" height="200" width="200" align="right">
+    <h5 style="color: darkorange; font-size:x-large; font-style: italic;" align="center"> BODMAS Formula </h5>
+
+    <a style="font-style: oblique; color: cadetblue">- What does BODMAS stand for?<br></a>
+    <br>
+    B = Brackets<br>
+    O = Of ( power of number ex. X <sup>2</sup> )<br>
+    D = Division<br>
+    M = Multiplication<br>
+    A = Addition<br>
+    S = Subtraction<br>
+<br>
+    You solve an equation in this manner
+
+    <h5 style="color: darkorange; font-size:x-large; font-style: italic;" align="center"> Examples-> </h5>
+    <p style="font-size:medium; ;color: cadetblue ; font-style: italic;"> BODMAS </p>
+    <p style="font-style: oblique;">In a right triangle ABC, AB is equal to 2cm (a), BC is equal to 2cm (b), find AC(c)?<br>
+    ans- a<sup>2</sup>+ b<sup>2</sup>= c<sup>2</sup> <br>
+    2<sup>2</sup>+ 2<sup>2</sup>= c<sup>2</sup> <br>
+    4 + 4 = c<sup>2</sup><br>
+    8 = c<sup>2</sup><br>
+    c = 4 <br></p>
+    <br>
+    <p align="right">Current Points: <span id="points">0</span></p> <img src="point.png" width="50" height="50" align="right">
+<h5 style="color: darkorange; font-size:x-large; font-style: italic;" align="center"> Some BODMAS Questions</h5>
+    <div id="question1">
+        <p style="color:rgb(0, 255, 208); font-style: italic;">{15 × 32 ÷ 2 × 5} ÷ 75
+        </p>
+        <input type="radio" id="a" name="q1" value="A">
+        <label for="a"> A. 16 </label><br>
+        <input type="radio" id="b" name="q1" value="B">
+        <label for="b"> B. 26 </label><br>
+        <input type="radio" id="c" name="q1" value="C">
+        <label for="c"> C. 5 </label><br>
+        <input type="radio" id="b" name="q1" value="D">
+        <label for="b"> D. 15 </label><br>
+      </div>
+      <div id="result1"></div>
+      
+      <div id="question2">
+        <p style="color:rgb(0, 255, 208);font-style: italic">5 × (2 × 3<sup>2</sup>) ÷ 6 + 7 – 8</p>
+        <input type="radio" id="a" name="q2" value="A">
+        <label for="a"> A. 115 </label><br>
+        <input type="radio" id="b" name="q2" value="B">
+        <label for="b"> B. 234 </label><br>
+        <input type="radio" id="c" name="q2" value="C">
+        <label for="c"> C. 134 </label><br>
+        <input type="radio" id="b" name="q2" value="D">
+        <label for="b"> D. 253 </label><br>
+      </div>
+      <div id="result2"></div>
+
+      <div id="question3">
+        <p style="color:rgb(0, 255, 208);font-style: italic">[(18 – 6) ÷ 4] + [72 – 12 ÷ 3 of 2]</p>
+        <input type="radio" id="a" name="q3" value="A">
+        <label for="a"> A. 73 </label><br>
+        <input type="radio" id="b" name="q3" value="B">
+        <label for="b"> B. 63 </label><br>
+        <input type="radio" id="c" name="q3" value="C">
+        <label for="c"> C. 75 </label><br>
+        <input type="radio" id="b" name="q3" value="D">
+        <label for="b"> D. 87 </label><br>
+      </div>
+      <div id="result3"></div>
+
+      <div id="question4">
+        <p style="color:rgb(0, 255, 208);font-style: italic">[15% of 150] + 23 ÷ 115</p>
+        <input type="radio" id="a" name="q4" value="A">
+        <label for="a"> A. 22.5 </label><br>
+        <input type="radio" id="b" name="q4" value="B">
+        <label for="b"> B. 22.7 </label><br>
+        <input type="radio" id="c" name="q4" value="C">
+        <label for="c"> C. 23.7 </label><br>
+        <input type="radio" id="b" name="q4" value="D">
+        <label for="b"> D. 14.6 </label><br>
+      </div>
+      <div id="result4"></div>
+
+      <div id="question5">
+        <p style="color:rgb(0, 255, 208);font-style: italic">12 + 6 × 27 ÷ 3 + 2 – 16 ÷ 8 × 2
+        </p>
+        <input type="radio" id="a" name="q5" value="A">
+        <label for="a"> A. 94 </label><br>
+        <input type="radio" id="b" name="q5" value="B">
+        <label for="b"> B. 90</label><br>
+        <input type="radio" id="c" name="q5" value="C">
+        <label for="c"> C. 64 </label><br>
+        <input type="radio" id="b" name="q5" value="D">
+        <label for="b"> D. 76 </label><br>
+      </div>
+      <div id="result5"></div>
+<input type="button" name="submit" onclick="check()">
+<button onclick="checkAnswer()" id="add-point-btn">Submit</button>
+<script>
+function checkAnswer() {
+    var radios = document.getElementsByName("q1");
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        var answer = radios[i].value;
+        break;
+      }
+    }
+    var resultDiv = document.getElementById("result1");
+    if (answer === "A") {
+      resultDiv.innerHTML = "Correct!";
+    } else {
+      resultDiv.innerHTML = "Incorrect. The answer is A.";
+    }
+
+    var radios = document.getElementsByName("q2");
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        var answer = radios[i].value;
+        break;
+      }
+    }
+    var resultDiv = document.getElementById("result2");
+    if (answer === "C") {
+      resultDiv.innerHTML = "Correct!";
+    } else {
+      resultDiv.innerHTML = "Incorrect. The answer is C.";
+    }
+
+    var radios = document.getElementsByName("q3");
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        var answer = radios[i].value;
+        break;
+      }
+    }
+    var resultDiv = document.getElementById("result3");
+    if (answer === "A") {
+      resultDiv.innerHTML = "Correct!";
+    } else {
+      resultDiv.innerHTML = "Incorrect. The answer is A.";
+    }
+
+    var radios = document.getElementsByName("q4");
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        var answer = radios[i].value;
+        break;
+      }
+    }
+    var resultDiv = document.getElementById("result4");
+    if (answer === "B") {
+      resultDiv.innerHTML = "Correct!";
+    } else {
+      resultDiv.innerHTML = "Incorrect. The answer is B.";
+    }
+
+    var radios = document.getElementsByName("q5");
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        var answer = radios[i].value;
+        break;
+      }
+    }
+    var resultDiv = document.getElementById("result5");
+    if (answer === "C") {
+      resultDiv.innerHTML = "Correct!";
+    } else {
+      resultDiv.innerHTML = "Incorrect. The answer is C.";
+    }
+  }
+  const points = document.getElementById("points");
+    const addPointBtn = document.getElementById("add-point-btn");
+
+    let currentPoints = 0;
+
+    addPointBtn.addEventListener("click", function() {
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++
+      currentPoints++;
+      points.innerHTML = currentPoints;
+    });
+</script>
+
+<h5 style="color: darkorange; font-size:x-large; font-style: italic;" align="center"> Some questions to do in your notebook </h5>
+<p style="color: rgb(12, 183, 183); font-style: italic;">- Question 1: 0.07 × 0.28 ÷ 0.02 + 0.48 – 2.48 ÷ 0.04<br>
+  <br>
+- Question 2:  8 ÷ 4 × (6 + 2 of 4) + 32 – 2<br>
+<br>
+- Question 3: 0.34 ÷ 1.7 + 45 × 2<br>
+<br>
+- Question 4: [{(45 + 90 ÷ 3 × 6) × 2} ÷ ½ ] × 56<br>
+<br>
+- Question 5: ⅖ + ¾ × ⅘ ÷ 6/5<br>
+<br>
+- Question 6: 45 + 34 ÷ 2 × 82 ÷ 16 × ( – 3)<br>  </p>
+<br>
+</script>
+<style>
+  input[type="Main Page"], input[type="Rewards"] {
+    background-color: #333;
+    color: aquamarine;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+    font-size: 15px;
+    font-style: oblique;
+    cursor: pointer;
+  }
+</style>
+<input type="Main Page" value="Return To Main Page" onclick="window.open('Main Page .html')">
+<p style="color:black;"> hello</p>
+<input type="Rewards" value="Rewards Page" onclick="window.open('Reward Page 1 .html')">
+<h3 style="color:darkorange; font-style: italic;"> CONTACT INFORMATION </h3>
+<br>
+<br>
+<a style="font-style: oblique;">+91 6239921775</a>
+<br>
+<a style="font-style: oblique;">tannish.dhingra@pathways.in</a>
+<br>
+<br>
+</body>
+</html>

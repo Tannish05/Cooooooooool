@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Page</title>
+	<style>
+		body {
+			background-color: rgb(11, 11, 11);
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin: 50px;
+		}
+
+		form {
+			background-color: rgb(40, 37, 37);
+			box-shadow: 0 0 30px aquamarine;
+			margin: auto;
+			padding: 35px;
+			width: 500px;
+		}
+
+		input[type="username"], input[type="email"], input[type="password"], [type="firstname"], input[type="lastname"] {
+			background-color: #333;
+			color: aquamarine;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: aquamarine;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: aquamarine;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 10px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		
+	</style>
+    <h1 style="color: aquamarine" >Register Now</h1>
+	<form action="">
+		<input type="firstname" placeholder="First Name" required><br>
+        <input type="lastname" placeholder="Last Name" required><br>
+		<input type="email" placeholder="Email" required><br>
+        <input type="username" placeholder="Username" required><br>
+        <input type="password" placeholder="Password" required><br>
+        <input type="password" placeholder="Confirm Password" required><br>
+		<input type="submit" value="Submit" onclick="window.open('Main Page .html')">
+	</form>
+</head>
+</html>

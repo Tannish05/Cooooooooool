@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			background-color: rgb(11, 11, 11);
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin: 50px;
+		}
+
+		form {
+			background-color: rgb(40, 37, 37);
+			box-shadow: 0 0 30px aquamarine;
+			margin: auto;
+			padding: 55px;
+			width: 500px;
+		}
+
+		input[type="text"], input[type="password"] {
+			background-color: #333;
+			color: aquamarine;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: aquamarine;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: aquamarine;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 10px;
+			font-size: 16px;
+			cursor: pointer;
+
+		}
+		input[type="register"] {
+			background-color: #333;
+			color: aquamarine;
+			padding: 10px 100px;
+			border: none;
+			border-radius: 5px;
+			font-size: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: aquamarine">Login</h1>
+	<form action="">
+		<input type="text" placeholder="Username" required><br>
+		<input type="password" placeholder="Password" required><br>
+		<input type="submit" value="Submit" onclick="window.open('Main Page .html')">
+	</form>
+	<br>
+        <input type="register" value="Not Loged In? Register Now" onclick="window.open('register page .html')">
+</body>
+</html>
